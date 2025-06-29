@@ -21,13 +21,13 @@ public class CalculatorTest {
 
     @Test
     public void testMultiply() {
-        int result = calculator.multiply(4, 5); // Act
-        assertEquals(20, result);              // Assert
+        int result = calculator.multiply(5, 5); // Act
+        assertEquals(25, result);              // Assert
     }
 
     @Test
     public void testDivide() {
-        int result = calculator.divide(10, 2);
-        assertEquals(5, result);
+        int result = calculator.divide(14, 2);
+        assertEquals(7, result);
     }
 }
