@@ -1,0 +1,44 @@
+git status
+
+git checkout -b GitWork
+
+echo "<msg>Hello from GitWork</msg>" > hello.xml
+git status
+
+git add hello.xml
+git commit -m "Added hello.xml in GitWork"
+
+git checkout main
+
+echo "<msg>Hello from Main</msg>" > hello.xml
+git add hello.xml
+git commit -m "Added hello.xml in main"
+
+git log --oneline --graph --decorate --all
+
+git diff GitWork
+
+git config --global merge.tool p4merge
+git mergetool
+
+git merge GitWork
+
+<<<<<<< HEAD
+<msg>Hello from Main</msg>
+=======
+<msg>Hello from GitWork</msg>
+>>>>>>> GitWork
+
+git mergetool
+
+git add hello.xml
+git commit -m "Resolved merge conflict in hello.xml"
+
+echo "*.bak" >> .gitignore
+git add .gitignore
+git commit -m "Ignore backup files"
+
+git branch
+git branch -d GitWork
+
+git log --oneline --graph --decorate
