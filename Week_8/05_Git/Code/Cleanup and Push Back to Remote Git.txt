@@ -1,0 +1,7 @@
+git status
+
+git branch -a
+
+git pull origin main
+
+git push origin main
