@@ -1,0 +1,10 @@
+git checkout -b GitNewBranch
+
+git branch -a
+
+echo "This is a new file in GitNewBranch" > branchfile.txt
+
+git add branchfile.txt
+git commit -m "Added branchfile.txt in GitNewBranch"
+
+git status

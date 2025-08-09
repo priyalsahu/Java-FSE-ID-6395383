@@ -1,0 +1,14 @@
+git checkout main
+
+git diff GitNewBranch
+
+git config --global diff.tool p4merge
+git config --global difftool.prompt false
+
+git difftool GitNewBranch
+
+git log --oneline --graph --decorate
+
+git branch -d GitNewBranch
+
+git status
