@@ -1,0 +1,20 @@
+mkdir GitDemo
+cd GitDemo
+git init
+
+echo "Welcome to Git Demo" > welcome.txt
+
+ls
+cat welcome.txt
+
+git status
+
+git add welcome.txt
+
+git commit -m "Initial commit: Added welcome.txt"
+
+git remote add origin https://gitlab.com/priyalsahu22/GitDemo.git
+
+git pull origin main
+
+git push origin main
